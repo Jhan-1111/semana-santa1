@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.navbar {
+    background-color: #00695c !important;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link.active {
+    color: #FFD54F !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+}
+
+.card-turismo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card-turismo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.carousel-turismo img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card-header {
+    background: linear-gradient(45deg, #00796B, #26A69A);
+    color: white;
+    font-weight: bold;
+}
+
+.list-group-item {
+    font-size: 1rem;
+}
+
+.list-group-item.active {
+    background-color: #00796B;
+    border-color: #00796B;
+    color: white;
+}
+
+.accordion-button {
+    font-weight: 600;
+    background-color: #e0f2f1;
+}
+
+.toast {
+    border-left: 5px solid #00796B;
+    border-radius: 10px;
+}
+
+.btn-primary, .btn-outline-secondary {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.progress-bar {
+    font-weight: bold;
+}
+
+footer, .pie {
+    background-color: #004D40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 40px;
+}

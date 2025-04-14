@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../estilos/estiloturismo.css">
+    <title>HOME</title>
+    <style>
+        .card-turismo {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .card-turismo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .carousel-turismo {
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .list-group-item.active {
+            background-color: #4DB6AC;
+            border-color: #4DB6AC;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cabecera">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <i class="bi bi-geo-alt-fill"></i> Turismo Semana Santa Bolivia
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="../pags/recetas.html">RECETAS</a>
+                            <a class="nav-link" href="../pags/tradiciones.html">TRADICIONES</a>
+                            <a class="nav-link active" aria-current="page" href="../pags/turismo.html">TURISMO</a>
+                            <a class="nav-link" href="../pags/historia.html">HISTORIA</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+      
+        <!-- Carrusel de lugares turísticos -->
+        <div class="cont1">
+            <div id="carouselTurismo" class="carousel slide carousel-turismo" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselTurismo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselTurismo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselTurismo" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../imag/procesion.jpg" class="d-block w-100" alt="Procesión La Paz">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Procesiones en La Paz</h5>
+                            <p>Vive la experiencia de las majestuosas procesiones</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imag/Las alfombras flores.webp" class="d-block w-100" alt="Alfombras Sucre">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Alfombras Florales en Sucre</h5>
+                            <p>Arte efímero que adorna las calles</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imag/les-33-eglises-de-potosi-v2-630-420.jpeg" class="d-block w-100" alt="Iglesias Potosí">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h5>Iglesias Coloniales de Potosí</h5>
+                            <p>Patrimonio cultural durante Semana Santa</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTurismo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTurismo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+       
+        <!-- Lugares recomendados -->
+        <div class="cont2">
+            <div class="card card-turismo">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0"><i class="bi bi-geo"></i> Rutas Turísticas</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Ruta de las Iglesias Coloniales
+                            <span class="badge bg-primary rounded-pill">Nuevo</span>
+                        </li>
+                        <li class="list-group-item">Circuito de Procesiones</li>
+                        <li class="list-group-item active">Tour Gastronómico Cuaresmal</li>
+                        <li class="list-group-item">Recorrido por Alfombras Florales</li>
+                        <li class="list-group-item">Vía Crucis Vivientes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   
+        <!-- Eventos destacados -->
+        <div class="cont3">
+            <div class="card card-turismo">
+                <img src="../imag/semana-santa-bolivia.jpg" class="card-img-top" alt="Evento destacado">
+                <div class="card-body">
+                    <h4 class="card-title">Eventos Destacados</h4>
+                    <div class="accordion" id="accordionEventos">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Festival de Música Sacra
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionEventos">
+                                <div class="accordion-body">
+                                    <p>Conciertos en iglesias coloniales durante toda la Semana Santa.</p>
+                                    <button class="btn btn-sm btn-outline-primary">Ver programación</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Feria Artesanal Religiosa
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionEventos">
+                                <div class="accordion-body">
+                                    <p>Artesanías y souvenirs religiosos en la plaza principal.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Tips para turistas -->
+        <div class="cont4">
+            <div class="card card-turismo h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Consejos para Turistas</h4>
+                    <div class="alert alert-info">
+                        <i class="bi bi-info-circle-fill"></i> Reserve alojamiento con anticipación
+                    </div>
+                    <div class="alert alert-warning">
+                        <i class="bi bi-exclamation-triangle-fill"></i> Respete las tradiciones locales
+                    </div>
+                    
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 85%">85% ocupación hotelera</div>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">
+                            <i class="bi bi-download"></i> Guía Turística
+                        </button>
+                        <button class="btn btn-outline-secondary" type="button">
+                            <i class="bi bi-map"></i> Mapa de Eventos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonios -->
+        <div class="cont5">
+            <div class="card card-turismo h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Testimonios</h4>
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>Una experiencia cultural inolvidable. Las procesiones son impresionantes.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            jhaneth paco rioss, <cite>BOLIVIA</cite>
+                        </figcaption>
+                    </figure>
+                    
+                    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <strong class="me-auto">Recomendación</strong>
+                            <small>Hace 2 días</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            No te pierdas las alfombras florales de Sucre al amanecer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pie">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <h2 class="mb-0">DERECHOS RESERVADOS © 2025 - Realizado por: Jhaneth Paco Rios</h2>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</body>
+</html>
